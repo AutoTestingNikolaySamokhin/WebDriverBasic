@@ -23,7 +23,7 @@ public class PageFillParameters {
     }
 
     public void writeWordsBody(String words) {
-        String path = "//*[@class=\"cke_contents cke_reset\"]/div";
+         String path = "//*[@class=\"cke_contents cke_reset\"]/div";
         WebElement webElement = (new WebDriverWait(driver, STANDING_TIME))
             .until(ExpectedConditions.presenceOfElementLocated(By.xpath(path)));
         webElement.clear();
